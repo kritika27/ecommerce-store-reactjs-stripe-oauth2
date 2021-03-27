@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#444;
+    font-weight:500;
+    font-size:18px;
+}
+.nav{
+    color:#444;
+}
+.nav-container{
+    
+    padding:10px;
+    display:flex;
+    height:10vh;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bar-toggle{
+    display:flex;
+}
+
+.links{
+    display:none;
+}
+.cart-icon{
+    display:none;
+}
+
+.login{
+  font-weight: bold;
+  color:#444;
+  background-color:transparent;
+  border: none;
+  cursor:pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+    .bar-toggle {
+      display: none;
+    }
+    .nav-center {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+    }
+ 
+    .links {
+      display: flex;
+      justify-content: center;
+    }
+      li {
+        margin: 0 0.5rem;
+      }
+      .cart-icon{
+        display:flex;
+    }
+   .nav h1{
+     margin-top:15px;
+    color: orange;
+    
+    font-family:cursive;
+   }
+    }
