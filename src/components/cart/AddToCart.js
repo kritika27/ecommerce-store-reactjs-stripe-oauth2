@@ -7,7 +7,6 @@ import "./Cart.css";
 const AddToCart = ({ product }) => {
   const { addToCart } = useGlobalContext();
   const { id, stock } = product;
-  console.log(product);
 
   const [amount, setAmount] = useState(1);
 

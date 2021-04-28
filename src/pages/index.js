@@ -1,4 +1,4 @@
-import CartItems from "./CartItems/CartItems";
+import CartItems from "./CartContent/CartItems";
 import Error from "./Error/Error";
 import Home from "./Home/Home";
 import ProductList from "./Products/ProductList";
