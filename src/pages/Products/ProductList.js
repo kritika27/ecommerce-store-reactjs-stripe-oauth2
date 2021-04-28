@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProductsContext } from "../../context/products_context";
-import AddToCart from "../../components/cart/AddToCart";
-import PageHero from "../../components/PageHero";
+import AddToCart from "../../components/Cart/AddToCart";
+import PageHero from "../../components/PageHero/PageHero";
 import "../../App.css";
+
 const ProductList = () => {
   const { products } = useProductsContext();
-  console.log(products);
   return (
     <>
       <PageHero item={products.length} name="PRODUCTS" />
@@ -26,7 +26,7 @@ const ProductList = () => {
 
                 <AddToCart product={product} />
                 <Link to={`/products/${id}`} className="prod-details">
-                  <button>Details</button>
+                  <button>View</button>
                 </Link>
               </div>
             </article>
