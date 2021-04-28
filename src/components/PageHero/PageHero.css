@@ -1,0 +1,9 @@
+.heading-center {
+  color: #fff;
+  background-color: #3aafa9;
+  min-height: 10vh;
+  width: 90vvw;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
