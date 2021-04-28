@@ -4,9 +4,9 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div class="info">
-      <div class="content">
-        <div class="head">
+    <div className="info">
+      <div className="content">
+        <div className="head">
           <h1>Ready for new stuff</h1>
           <p>Buy new stock at reasonable cost</p>
 
@@ -15,7 +15,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div class="pic"></div>
+      <div className="pic"></div>
     </div>
   );
 }
