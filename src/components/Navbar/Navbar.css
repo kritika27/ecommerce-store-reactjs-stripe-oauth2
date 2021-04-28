@@ -19,61 +19,127 @@ a{
 .nav{
     color:#444;
 }
+
 .nav-container{
-    
-    padding:10px;
     display:flex;
-    height:10vh;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    
+    flex-direction: column;     
+}
+.links a:hover{
+border-color:#3AAFA9;
+}
+.links a{
+  border-bottom:2px solid transparent;
 }
 
-.bar-toggle{
-    display:flex;
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links li{
+  padding:10px;
 }
 
-.links{
-    display:none;
-}
 .cart-icon{
-    display:none;
+  margin-left:10px;
 }
 
 .login{
   font-weight: bold;
-  color:#444;
-  background-color:transparent;
+  color:#fff;
+  background-color:#3AAFA9;
   border: none;
   cursor:pointer;
   display:flex;
   align-items: center;
   justify-content: center;
+  padding:10px;
+  border:2px solid transparent;
 }
-@media (min-width: 992px) {
-    .bar-toggle {
-      display: none;
-    }
-    .nav-center {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      align-items: center;
-    }
+
+.login:hover{
+  color:#3AAFA9;
+  background-color:transparent;
+  border-color:#3AAFA9;
+  
+}
+.cart-icon:hover{
+  filter:brightness(150%);
  
+}
+
+.user{
+  display:flex;
+  margin-bottom:2px;
+  
+}
+.nav-item {
+  display: block;
+  position: relative;
+}
+nav svg {
+  width: 2rem;
+  fill: #fff;
+}
+.amount-container {
+  position: absolute;
+  top: -0.68rem;
+  right: -0.85rem;
+  width: 1.62rem;
+  height: 1.62rem;
+  border-radius: 50%;
+  background-color:#3AAFA9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.total-amount {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1.22rem;
+}
+.nav h1{
+  color: #3AAFA9;
+font-family:cursive;
+}
+
+@media (min-width: 767px) {
+
+  .nav-container{
+     padding:20px;
+     display:flex;
+     height:10vh;
+     justify-content: space-between;
+     flex-direction: row;
+     align-items: center;  
+  }
+  .links a:hover{
+    border-color:#3AAFA9;
+    }
+    .links a{
+      border-bottom:2px solid transparent;
+    }
+    
+    
     .links {
       display: flex;
       justify-content: center;
     }
-      li {
-        margin: 0 0.5rem;
-      }
-      .cart-icon{
-        display:flex;
+    .links li{
+      padding:10px;
     }
-   .nav h1{
-     margin-top:15px;
-    color: orange;
+    .login{
+      font-weight: bold;
+      color:#fff;
+      background-color:#3AAFA9;
+      border: none;
+      cursor:pointer;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      padding:10px;
+      border:2px solid transparent;
+}
+}
     
-    font-family:cursive;
-   }
-    }
