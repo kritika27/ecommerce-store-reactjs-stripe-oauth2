@@ -1,8 +1,3 @@
-/* 
-====== 
-Variables 
-======
-*/
 :root {
   --primaryLightColor: #d4e6a5;
   --primaryColor: #476a2e;
@@ -36,18 +31,15 @@ Global Styles
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--mainBlack);
   background: var(--mainBackground);
   line-height: 1.4;
   font-size: 1rem;
   font-weight: 300;
 }
-h1,
-h2,
-h3,
-h4,
+
 h5,
 h6 {
   font-family: var(--slantedFont);
@@ -69,111 +61,6 @@ img {
   display: block;
 }
 
-/* 
-====== 
-Buttons 
-======
-*/
-.btn,
-.btn-white,
-.btn-primary {
-  text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
-  border: 2px solid var(--primaryColor);
-  padding: 0.45rem 0.8rem;
-  display: inline-block;
-  transition: var(--mainTransition);
-  cursor: pointer;
-  font-size: 0.8rem;
-  background: transparent;
-  border-radius: var(--mainBorderRadius);
-  display: inline-block;
-}
-.btn:hover {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
-}
-.btn-white {
-  background: transparent;
-  color: var(--mainWhite);
-  border-color: var(--mainWhite);
-}
-.btn-white:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
-}
-.btn-primary {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
-  border-color: transparent;
-}
-.btn-primary:hover {
-  background: var(--primaryLightColor);
-  color: var(--primaryColor);
-}
-.btn-block {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  box-shadow: var(--lightShadow);
-  text-align: center;
-}
-.btn-details {
-  padding: 0.25rem 0.4rem;
-}
-.btn-details:hover {
-  background: var(--primaryLightColor);
-  border-color: var(--primaryLightColor);
-}
-/* 
-====== 
-Navbar
-======
-*/
-/*
-.navbar {
-  background: var(--mainWhite);
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid var(--primaryColor);
-  box-shadow: var(--lightShadow);
-}
-.nav-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: var(--smallWidth);
-  margin: 0 auto;
-  max-width: var(--fullWidth);
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-.nav-links a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
-  transition: var(--mainTransition);
-}
-.nav-links a:hover {
-  color: var(--primaryColor);
-}
-.logo {
-  width: 12rem;
-}*/
-/* 
-====== 
-About
-======
-*/
 .about-section {
   width: var(--smallWidth);
   max-width: var(--maxWidth);
@@ -197,16 +84,14 @@ Error
   text-align: center;
   text-transform: capitalize;
 }
-/* 
-====== 
-Cocktails List 
-======
-*/
 
-.product{
-  display:flex;
-  justify-content:space-between;
+.product {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.content-prod {
+  padding: 20px;
 }
 .section {
   padding: 5rem 0;
@@ -226,53 +111,54 @@ Cocktails List
   display: grid;
   row-gap: 2rem;
   column-gap: 2rem;
-  padding:20px;
-  /* align-items: start; */
+  padding: 20px;
 }
 @media screen and (min-width: 576px) {
   .cocktails-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
   }
 }
-/* 
-====== 
-Cocktail 
-======
-*/
 
-.add-cart{
-  color:#fff;
-  background: #17252A;
-  padding:12px;
-  margin-bottom:10px;
+.add-cart {
+  color: #fff;
+  background: #17252a;
+  padding: 10px;
+  margin-bottom: 10px;
   text-align: center;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
 }
 
-.prod-details{
-  color:#444;
-  padding:8px;
-  cursor:pointer;
-  border:2px solid #444;
-  background-color: transparent;;
+.prod-details button {
+  border: none;
+  cursor: pointer;
+}
+.prod-details {
+  color: #444;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border: 2px solid #444;
+  background-color: transparent;
 }
 .cocktail {
   background: var(--mainWhite);
   margin-bottom: 2rem;
-  /*box-shadow: var(--lightShadow);*/
   transition: var(--mainTransition);
   display: grid;
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
 }
-.amount{
-  display:flex;
-  flex-direction: row;
- align-items: center;
- margin-right:20px;
- margin-left:20px;
-  padding:5px;
+.amount {
+  display: flex;
+
+  align-items: center;
+
+  padding: 5px;
   justify-content: center;
 }
 .cocktail:hover {
@@ -286,9 +172,8 @@ Cocktail
 }
 .cocktail-footer {
   padding: 1.5rem;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  border:2px solid #444;
 }
 .cocktail-footer h3,
 .cocktail-footer h4,
@@ -302,6 +187,17 @@ Cocktail
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
 }
+
+.prod-button {
+  display: flex;
+  justify-content: space-between;
+}
+.prod-photo {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* 
 ====== 
 Form
@@ -411,7 +307,7 @@ Cocktail
 .loader:after {
   position: absolute;
   top: 0;
-  content: '';
+  content: "";
 }
 .loader:before {
   left: -1.5em;
@@ -448,23 +344,39 @@ Cocktail
 
 /*cart*/
 
-  .link-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-  }
-  .link-btn {
-    background: transparent;
-    border-color: transparent;
-    text-transform: capitalize;
-    padding: 0.25rem 0.5rem;
-    background: var(--clr-primary-5);
-    color: var(--clr-white);
-    border-radius: var(--radius);
-    letter-spacing: var(--spacing);
-    font-weight: 400;
-    cursor: pointer;
-  }
-  .clear-btn {
-    background: var(--clr-black);
-  }
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 20px;
+}
+.link-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  background: #3aafa9;
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  letter-spacing: var(--spacing);
+  font-weight: 400;
+  cursor: pointer;
+}
+.clear-btn {
+  background: var(--clr-black);
+}
+
+.cart-total-checkout {
+  justify-content: center;
+  display: grid;
+  margin-top: 0.5rem;
+  padding: 1rem 1rem;
+}
+.cart-total-checkout h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3aafa9;
+}
+.cart-total-checkout span {
+  color: #444;
+}
