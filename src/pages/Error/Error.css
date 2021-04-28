@@ -1,28 +1,28 @@
-.err{   
-    text-align: center;
-    background-color: #44a1a0;
-    margin:0;
-    padding:25px;
-    color:whitesmoke;
-    max-width:100vw;
-    height:90vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;   
+.err {
+  text-align: center;
+  background-color: #44a1a0;
+  margin: 0;
+  padding: 25px;
+  color: whitesmoke;
+  max-width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.err h1{
-font-size:50px;
+.err h1 {
+  font-size: 50px;
 }
 
-.button{
-margin-top:6px;
-background: #fffffa;
-font-size: 24px;
-text-decoration: none;
-border:none;
-color: #01847f;
-border-radius: 8px;
-padding: 12px 20px;
-cursor:pointer;
+.button {
+  margin-top: 6px;
+  background: #fffffa;
+  font-size: 24px;
+  text-decoration: none;
+  border: none;
+  color: #01847f;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
 }
