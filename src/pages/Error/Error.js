@@ -6,13 +6,13 @@ function Error() {
   return (
     <div className="err">
       <img
-        style={{ height: "400px", width: "400px" }}
+        style={{ height: "70vh", width: "30vw" }}
         src="images/Q2BAOd2.png"
-        alt="Used to show error"
+        alt="404 error"
       />
 
       <h3>This Page Is Not On The Map.</h3>
-      <Link to="/product">
+      <Link to="/products">
         <button className="button">Back to Products</button>
       </Link>
     </div>
