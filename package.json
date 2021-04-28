@@ -17,8 +17,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start",   
+    "build": "react-scripts build && cp _redirects build/_redirects",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
