@@ -1,7 +1,7 @@
-import Checkout from "./Checkout";
+import CartItems from "./Cart/CartItems";
 import Error from "./Error/Error";
 import Home from "./Home/Home";
-import Products from "./Products";
-import SingleProduct from "./SingleProduct";
+import ProductList from "./Products/ProductList";
+import SingleProduct from "./SingleProduct/SingleProduct";
 
-export { Checkout, Error, Home, Products, SingleProduct };
+export { CartItems, Error, Home, ProductList, SingleProduct };
