@@ -1,65 +1,64 @@
-
-
-.pic{
-    
-    background:url("../../images/ahmed-carter-tiWcNvpQF4E-unsplash.jpg")no-repeat center center/cover;
-    width:60%;
-    height:90vh;
-}
-.info{
-    display:flex;
+button:focus {
+  outline: none;
 }
 
-.content{
-    
-    width:40%;
-    
-    text-align: center;
-  
-    padding:50px;
-    height:90vh;
+.pic {
+  background: url("../../images/ahmed-carter-tiWcNvpQF4E-unsplash.jpg")
+    no-repeat center center/cover;
+  width: 60%;
+  height: 90vh;
+}
+.info {
+  display: flex;
+}
+
+.content {
+  width: 40%;
+  text-align: center;
+  padding: 50px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ecf0f1;
+}
+.content h1 {
+  font-size: 60px;
+  line-height: 1em;
+}
+.content p {
+  color: #17252a;
+}
+.head {
+  max-width: 80%;
+  line-height: 3em;
+  margin: 0;
+  text-align: left;
+  border-top: 3px solid #3aafa9;
+  padding-top: 20px;
+}
+.content button {
+  padding: 10px;
+  color: #fff;
+  background-color: #3aafa9;
+  border: none;
+  cursor: pointer;
+}
+.content button:hover {
+  color: #3aafa9;
+  background: transparent;
+  border: 2px solid #3aafa9;
+}
+
+@media (max-width: 1119px) {
+  .info {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #ECF0F1;
-}
-.content h1{
-    
-    font-size: 60px;
-    line-height: 1em;
-}
-.content p{
-    color: #17252A;
-}
-.head{
-   max-width: 80%;
-   line-height: 3em;
-   margin:0;
-   text-align: left;
-   border-top:3px solid #3AAFA9;
-   padding-top:20px;
-   
-    
-}
-.content button{
-    padding:10px;
-    color:#fff;
-    background-color:#3AAFA9;
-    border: none;
-    cursor:pointer;
-}
-
-
-
-@media(max-width: 1119px) {
-.info{
-    display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-.content,.pic{
-    width:100%;
-}
-
+  }
+  .content,
+  .pic {
+    width: 100%;
+  }
 }
