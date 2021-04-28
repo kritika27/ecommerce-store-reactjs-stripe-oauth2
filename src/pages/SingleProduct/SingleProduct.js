@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useProductsContext } from "../../context/products_context";
+import AddToCart from "../../components/Cart/AddToCart";
 import "./SingleProduct.css";
-import AddToCart from "../../components/cart/AddToCart";
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -24,7 +24,7 @@ const SingleProduct = () => {
               <span class="fa fa-star review"></span>
               <span class="fa fa-star review"></span>
               <span class="fa fa-star-half-o review"></span>
-              <p>70 Reviews</p>
+              <p>60 Reviews</p>
               <h5 className="price-prod">${price}</h5>
               <p className="description"> {description}</p>
               <p className="info-prod">
