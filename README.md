@@ -6,7 +6,7 @@ This is a fully functional Ecommerce Website which allows the user to login,add 
 
 ## Demo
 
-👉 [Link](https://sharp-panini-fcdabb.netlify.app/)
+👉 [Link](https://wizardly-panini-81c8e1.netlify.app/)
 
 ## Screenshots
 
@@ -34,7 +34,7 @@ Step 1
 🍴 Fork this repo!
 
 Step 2
-👯 Clone this repo to your local machine using
+👯 Clone this repo to your local machine using https://github.com/kritika27/ecommerce-store-reactjs-stripe-oauth2.git
 
 Step 3
 HACK AWAY! 🔨🔨🔨
