@@ -353,12 +353,10 @@ Cocktail
 .link-btn {
   background: transparent;
   border-color: transparent;
-  text-transform: capitalize;
   padding: 0.25rem 0.5rem;
   background: #3aafa9;
   color: var(--clr-white);
   border-radius: var(--radius);
-  letter-spacing: var(--spacing);
   font-weight: 400;
   cursor: pointer;
 }

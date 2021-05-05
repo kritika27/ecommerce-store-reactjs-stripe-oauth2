@@ -137,3 +137,9 @@ nav svg {
     border: 2px solid transparent;
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+  .links a:focus{
+    border:none;
+  }
+}
