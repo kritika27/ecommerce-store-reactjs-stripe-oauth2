@@ -6,7 +6,7 @@ function Error() {
   return (
     <div className="err">
       <img
-        style={{ height: "70vh", width: "30vw" }}
+        style={{ height: "70vh", width: "35vw" }}
         src="images/Q2BAOd2.png"
         alt="404 error"
       />
