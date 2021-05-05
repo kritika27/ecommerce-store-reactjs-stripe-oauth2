@@ -25,8 +25,17 @@ const ProductList = () => {
                 </div>
 
                 <AddToCart product={product} />
-                <Link to={`/products/${id}`} className="prod-details">
-                  <button>View</button>
+                <Link
+                  to={`/products/${id}`}
+                  className="add-cart"
+                  style={{
+                    color: "#17252A",
+                    background: "#fff",
+                    border: "2px solid #17252A",
+                  }}
+                >
+                  {/*className="prod-details">*/}
+                  View
                 </Link>
               </div>
             </article>
