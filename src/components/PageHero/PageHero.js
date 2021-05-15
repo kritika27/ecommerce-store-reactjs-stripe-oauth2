@@ -1,7 +1,7 @@
 import React from "react";
 import "./PageHero.css";
 
-const PageHero = ({ item, name }) => {
+const PageHero = React.memo(function PageHero({ item, name }) {
   return (
     <div className="heading-center">
       <h3>
@@ -9,6 +9,6 @@ const PageHero = ({ item, name }) => {
       </h3>
     </div>
   );
-};
+});
 
 export default PageHero;

@@ -3,7 +3,13 @@ import { useGlobalContext } from "../../context/cart_context";
 import AmountButtons from "../AmountButtons/AmountButtons";
 import "./Cart.css";
 
-export default function CartItem({ id, name, image, price, amount }) {
+const CartItem = React.memo(function CartItem({
+  id,
+  name,
+  image,
+  price,
+  amount,
+}) {
   const { remove, decrease, increase } = useGlobalContext();
 
   return (
@@ -28,4 +34,5 @@ export default function CartItem({ id, name, image, price, amount }) {
       </button>
     </div>
   );
-}
+});
+export default CartItem;
