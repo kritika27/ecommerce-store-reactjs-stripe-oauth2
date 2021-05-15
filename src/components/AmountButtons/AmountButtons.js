@@ -1,7 +1,7 @@
 import React from "react";
 import "./AmountButtons.css";
 
-const AmountButtons = ({ inc, dec, amount }) => {
+const AmountButtons = React.memo(function AmountButtons({ inc, dec, amount }) {
   return (
     <div className="amount-btns">
       <button type="button" className="amount-btn" onClick={dec}>
@@ -13,7 +13,6 @@ const AmountButtons = ({ inc, dec, amount }) => {
       </button>
     </div>
   );
-};
-
+});
 
 export default AmountButtons;
