@@ -4,7 +4,7 @@ import { useGlobalContext } from "../../context/cart_context";
 import AmountButtons from "../AmountButtons/AmountButtons";
 import "./Cart.css";
 
-const AddToCart = ({ product }) => {
+const AddToCart = React.memo(function AddToCart ({ product }) {
   const { addToCart } = useGlobalContext();
   const { id, stock } = product;
 
@@ -41,6 +41,6 @@ const AddToCart = ({ product }) => {
       </Link>
     </div>
   );
-};
+})
 
 export default AddToCart;
