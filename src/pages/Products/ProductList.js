@@ -23,7 +23,7 @@ const ProductList = () => {
                   <h4>{name}</h4>
                   <h4 className="price">${price}</h4>
                 </div>
-
+                
                 <AddToCart product={product} />
                 <Link
                   to={`/products/${id}`}
