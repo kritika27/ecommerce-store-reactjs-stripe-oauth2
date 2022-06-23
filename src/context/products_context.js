@@ -42,17 +42,9 @@ const ProductsProvider = ({ children }) => {
     dispatch({ type: "DEC", payload: id });
   };
 
-  const increase = (id) => {
-    dispatch({ type: "INCREASE", payload: id });
-  };
-
-  const decrease = (id) => {
-    dispatch({ type: "DECREASE", payload: id });
-  };
-
   return (
     <ProductsContext.Provider
-      value={{ ...state, increase, decrease, inc, dec, addToCart }}
+      value={{ ...state, inc, dec, addToCart }}
     >
       {children}
     </ProductsContext.Provider>
