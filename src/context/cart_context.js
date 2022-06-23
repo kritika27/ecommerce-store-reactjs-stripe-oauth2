@@ -48,9 +48,9 @@ const reducer = (state, action) => {
   //Increase amount of items
   if (action.type === "INC") {
     let tempCart = state.cart.map((item) => {
-      if (item.id === action.payload) {
+      if (item.id === action.payload && state.amount<10) {
         let newAmount = item.amount + 1;
-        if (newAmount > item.max) {
+        if (newAmount > item.max && state.amount<10) {
           newAmount = item.max;
 
           return {
