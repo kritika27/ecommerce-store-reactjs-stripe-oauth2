@@ -1,12 +1,18 @@
-# Ecommere App
+# Ecommerce App
 
 ## Description
 
 This is a fully functional Ecommerce Website which allows the user to login,add products to cart,view products in detail and do the payment through credit card.This website is built using React,React Router,OAuth2 for user authentication,Stripe for payment and Netlify for deployment.Images used in this website are being taken from [Unsplash website](https://unsplash.com).
 
+Payment Card Details:
+
+- Card Number: 4242 4242 4242 4242,
+- Expiry: Any future Date,
+- CVV: Any 3 digit number.
+
 ## Demo
 
-👉 [Link](https://wizardly-panini-81c8e1.netlify.app/)
+👉 [Link](https://competent-engelbart-3915c0.netlify.app/)
 
 ## Screenshots
 
@@ -18,6 +24,9 @@ Login Popup
 
 Products Page
 ![product](https://user-images.githubusercontent.com/4997491/116504383-c6199d80-a8d5-11eb-89aa-3c4874d009e1.JPG)
+
+Product Details Page
+![product_details](https://user-images.githubusercontent.com/4997491/179211094-01c52cc9-7a67-41a4-804a-7085a3946ffc.PNG)
 
 Cart Page
 ![cart](https://user-images.githubusercontent.com/4997491/116504661-75567480-a8d6-11eb-9ed3-187502655349.JPG)
