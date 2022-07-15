@@ -7,7 +7,7 @@ const StripePay = React.memo(function StripePay({ price }) {
 
   const onToken = (token) => {
     console.log(token);
-    alert("Payment is successful! Your order is placed.");
+    alert("Payment is successful! Your order has been placed.");
   };
 
   return (
